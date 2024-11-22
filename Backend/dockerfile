@@ -10,6 +10,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Instala las dependencias
+RUN pip install --upgrade pip
+
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia el resto de los archivos del backend
