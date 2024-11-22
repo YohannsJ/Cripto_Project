@@ -34,3 +34,6 @@ Thumbs.db
 # Archivos de compilación
 dist/
 build/
+
+# Archivos de pruebas
+temp.py

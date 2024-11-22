@@ -1,20 +1,21 @@
 # Usa una imagen de Node.js oficial
-FROM node:18
+FROM node:20.11.0
 
-# Establece el directorio de trabajo
+# Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copia el archivo package.json y package-lock.json
-COPY package*.json ./
+# Copia los archivos de configuración del proyecto
+COPY package.json ./
+# package-lock.json ./
 
 # Instala las dependencias
 RUN npm install
 
-# Copia el resto del proyecto React
+# Copia el resto del código fuente
 COPY . .
 
-# Expone el puerto 3000
-EXPOSE 3000
+# Expone el puerto por defecto de Vite (5173)
+EXPOSE 5173
 
-# Comando para iniciar React
-CMD ["npm", "start"]
+# Comando para iniciar el servidor
+CMD ["npm", "run", "dev"]
