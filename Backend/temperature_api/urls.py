@@ -16,13 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework.routers import DefaultRouter # type: ignore
-from temperatures.views import TemperatureViewSet
-
-router = DefaultRouter()
-router.register(r'temperatures', TemperatureViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('api/', include('temperatures.urls')),  # Incluye las URLs de temperatures
 ]
