@@ -3,7 +3,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 class Temperature(models.Model):
     sensor_id = models.CharField(max_length=100)
-    value = models.FloatField()
+    value = models.FloatField(default=0.0) 
     timestamp = models.DateTimeField(auto_now_add=True)
     latitude = models.FloatField(
         null=True, blank=True,

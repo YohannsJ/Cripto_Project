@@ -1,0 +1,262 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Arica y Parinacota", "ID": 15 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -17.5],
+              [-70.0, -17.5],
+              [-70.0, -18.5],
+              [-69.5, -18.5],
+              [-69.5, -17.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Tarapacá", "ID": 1 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -18.5],
+              [-70.0, -18.5],
+              [-70.0, -20.0],
+              [-69.5, -20.0],
+              [-69.5, -18.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Antofagasta", "ID": 2 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -20.0],
+              [-70.0, -20.0],
+              [-70.0, -25.0],
+              [-69.5, -25.0],
+              [-69.5, -20.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Atacama", "ID": 3 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -25.0],
+              [-70.0, -25.0],
+              [-70.0, -28.5],
+              [-69.5, -28.5],
+              [-69.5, -25.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Coquimbo", "ID": 4 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -28.5],
+              [-70.0, -28.5],
+              [-70.0, -31.5],
+              [-69.5, -31.5],
+              [-69.5, -28.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Valparaíso", "ID": 5 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -31.5],
+              [-70.0, -31.5],
+              [-70.0, -33.5],
+              [-69.5, -33.5],
+              [-69.5, -31.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Metropolitana de Santiago", "ID": 13 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -33.5],
+              [-70.0, -33.5],
+              [-70.0, -34.5],
+              [-69.5, -34.5],
+              [-69.5, -33.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "O'Higgins", "ID": 6 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -34.5],
+              [-70.0, -34.5],
+              [-70.0, -35.5],
+              [-69.5, -35.5],
+              [-69.5, -34.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Maule", "ID": 7 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -35.5],
+              [-70.0, -35.5],
+              [-70.0, -36.5],
+              [-69.5, -36.5],
+              [-69.5, -35.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Ñuble", "ID": 16 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -36.5],
+              [-70.0, -36.5],
+              [-70.0, -37.5],
+              [-69.5, -37.5],
+              [-69.5, -36.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Biobío", "ID": 8 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -37.5],
+              [-70.0, -37.5],
+              [-70.0, -38.5],
+              [-69.5, -38.5],
+              [-69.5, -37.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "La Araucanía", "ID": 9 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -38.5],
+              [-70.0, -38.5],
+              [-70.0, -39.5],
+              [-69.5, -39.5],
+              [-69.5, -38.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Los Ríos", "ID": 14 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -39.5],
+              [-70.0, -39.5],
+              [-70.0, -40.5],
+              [-69.5, -40.5],
+              [-69.5, -39.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Los Lagos", "ID": 10 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -40.5],
+              [-70.0, -40.5],
+              [-70.0, -44.0],
+              [-69.5, -44.0],
+              [-69.5, -40.5]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Aysén", "ID": 11 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -44.0],
+              [-70.0, -44.0],
+              [-70.0, -49.0],
+              [-69.5, -49.0],
+              [-69.5, -44.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": { "NOMBRE": "Magallanes", "ID": 12 },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-69.5, -49.0],
+              [-70.0, -49.0],
+              [-70.0, -56.0],
+              [-69.5, -56.0],
+              [-69.5, -49.0]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+  
