@@ -159,7 +159,7 @@ function App() {
         )}
         <h2>Total Uploads: {uploadCount}</h2>
       </div>
-
+{/* 
       <div className="slider-container">
         <h2>Number of Entries to Display</h2>
         <Slider
@@ -172,7 +172,7 @@ function App() {
           min={1}
           max={100}
         />
-      </div>
+      </div> */}
 
       <div className="table-container">
         <TemperatureTable clientKeyPair={clientKeyPair} signature={signature} numEntries={numEntries} />
