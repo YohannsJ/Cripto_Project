@@ -120,29 +120,19 @@ app.get('/sensors/naturaly', async (req, res) => {
 app.post('/sensors', async (req, res) => {
   const { signature, publicKey, n } = req.body;
 
-  if ( !publicKey || !n) {
+  if (!publicKey || !n) {
     return res.status(400).json({ error: 'Faltan campos requeridos: signature, publicKey o n.', body: req.body });
   }
 
   try {
-    // Verificar la firma con la clave pública del cliente
-    // console.log('Firma recibida:', signature);
-    console.log('Clave pública recibida:', publicKey);
+    // Crear objeto key a partir de la clave pública
     const key = ec.keyFromPublic(publicKey, 'hex');
-    // const isValid = key.verify('FETCH_SENSORS', signature); // Mensaje arbitrario para firmar
-
-    // if (!isValid) {
-    //   return res.status(403).json({ error: 'Firma inválida o no autorizada.' });
-    // }
-
-    // Consultar los datos de la base de datos
+    
     const result = await pool.query('SELECT encrypted_data, public_key, iv, upload_date FROM sensors ORDER BY upload_date DESC LIMIT $1', [n]);
 
-    // Derivar clave compartida (shared secret) para descifrar los datos
     const sharedSecret = serverECDHKey.derive(key.getPublic()).toString('hex');
     const keyHex = CryptoJS.enc.Hex.parse(sharedSecret);
       
-    // Descifrar cada registro
     const decryptedData = result.rows.map((row) => {
       const ivHex = CryptoJS.enc.Hex.parse(row.iv);
       const decryptedBytes = CryptoJS.AES.decrypt(row.encrypted_data, keyHex, { iv: ivHex });
@@ -153,7 +143,6 @@ app.post('/sensors', async (req, res) => {
       };
     });
     
-    // Enviar datos descifrados
     res.json({ data: decryptedData });
   } catch (err) {
     console.error('Error al obtener y descifrar sensores:', err.message);

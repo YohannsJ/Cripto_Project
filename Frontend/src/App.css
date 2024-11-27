@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .logo {
@@ -17,15 +20,127 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-.Input {
+
+.input-field {
   padding: 0.5em;
   font-size: 1em;
   border: 1px solid #ccc;
-  color: black;
-  background-color: #ccc;
+  color: #333;
+  background-color: #f9f9f9;
   border-radius: 4px;
   margin: 0.5em;
+  width: calc(100% - 1em);
+  box-sizing: border-box;
 }
+
+.card {
+  padding: 2em;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.action-button {
+  margin: 0.5em;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+.action-button:hover {
+  border-color: #646cff;
+  background-color: #333333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.stepper-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.data-overview {
+  margin-bottom: 2rem;
+}
+
+.sensor-list {
+  margin-bottom: 2rem;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 2rem; /* Adjusted margin to bring the table higher */
+}
+
+.step-icon {
+  color: gray;
+}
+.step-icon-active {
+  color: blue !important;
+}
+.step-icon-completed {
+  color: green !important;
+}
+
+.data-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
+  position: relative;
+}
+
+.data-cell:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: normal;
+  z-index: 10;
+  max-width: 300px; /* Ensure the tooltip doesn't overflow the screen */
+  overflow-wrap: break-word; /* Break long words to fit within the tooltip */
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -41,10 +156,45 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
+@media (max-width: 500px) {
+  #root {
+    padding: 1rem;
+  }
 
-.read-the-docs {
-  color: #888;
+  .header {
+    margin-bottom: 1rem;
+  }
+
+  .stepper-container {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .actions-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .form-container {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .data-overview {
+    margin-bottom: 1rem;
+  }
+
+  .sensor-list {
+    margin-bottom: 1rem;
+  }
+
+  .table-container {
+    margin-top: 1rem;
+  }
+
+  .action-button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
 }

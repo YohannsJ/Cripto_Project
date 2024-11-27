@@ -33,7 +33,7 @@ public/build
 .cache/
 tmp/
 .DS_Store
-
+/venv
 # Vite-specific
 vite.config.js
 .vite/
