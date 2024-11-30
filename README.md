@@ -11,7 +11,7 @@ Este proyecto implementa un sistema de comunicación segura utilizando **interca
  <!-- []: # (Links) -->
   * [Repositorio del proyecto](https://github.com/YohannsJ/Cripto_Project/)
   * [Video demostrativo](https://www.youtube.com/watch?v=RPNGKNoFwvk&feature=youtu.be)
-  * [Documento .pdf del proyecto]( )
+  * [Documento .pdf del proyecto](/Proyecto_TEL252_Grupo4.pdf )
 ---
 ## **Estructura del Proyecto**
 
